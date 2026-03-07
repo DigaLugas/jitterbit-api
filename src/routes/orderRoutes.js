@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const orderController = require('../controllers/orderController');
-const validarPedido = require('../middlewares/validarPedido');
+const validarPedido = require('../middlewares/validarPedidos');
 
 router.post('/', validarPedido, orderController.criar);
 router.get('/:id', orderController.buscar);
