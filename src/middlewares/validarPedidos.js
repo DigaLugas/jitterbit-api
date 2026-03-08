@@ -1,5 +1,5 @@
 //valida campos obrigatórios para criação e atualização de pedidos
-const validarPedidos = (req, res, next) => {
+ const validarPedidos = (req, res, next) => {
     const { numeroPedido, valorTotal, dataCriacao, items } = req.body;
     if (!numeroPedido) {
         return res.status(400).json({ erro: 'Campo numeroPedido é obrigatório' });
@@ -20,3 +20,4 @@ const validarPedidos = (req, res, next) => {
     }   
     next();
 };
+module.exports = validarPedidos;
