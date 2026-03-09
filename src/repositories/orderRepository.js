@@ -56,6 +56,10 @@ const atualizar = async (orderId, data) => {
 
 //remove um pedido e seus itens
 const deletar = async (orderId) => {
+  await prisma.item.deleteMany({
+    where: { orderId }
+  });
+
   return await prisma.order.delete({
     where: { orderId }
   });
