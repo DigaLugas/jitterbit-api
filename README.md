@@ -20,7 +20,7 @@ API REST para gerenciamento de pedidos desenvolvida como parte do processo selet
 
 **1. Clone o repositório**
 ```bash
-git clone https://github.com/seu-usuario/jitterbit-api.git
+git clone https://github.com/DigaLugas/jitterbit-api.git
 cd jitterbit-api
 ```
 
